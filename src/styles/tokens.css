@@ -1,0 +1,70 @@
+/* Hallmark · macrostructure: custom (herramienta de búsqueda: formulario → resultados → detalle) · tone: utilitario-institucional · anchor hue: 255
+ * theme: studied-DNA (source: https://jusformosa.gob.ar/desarrollos/jurisprudencia/buscador.php)
+ * paper oklch(98.5% 0.004 255) · accent oklch(43.7% 0.140 255) (= #05509c, azul institucional del sitio oficial)
+ * UI: Mulish (familia del sitio oficial) · lectura: Source Serif 4 (texto de fallos y sumarios)
+ * base: Bootstrap 5 con sus variables ajustadas a estos tokens · studied: yes · DNA-source: url
+ */
+:root {
+  /* Color — anclado en el tono 255 del azul institucional */
+  --color-paper:       oklch(98.5% 0.004 255);
+  --color-paper-2:     oklch(96.2% 0.007 255);
+  --color-paper-3:     oklch(93.0% 0.010 255);
+  --color-rule:        oklch(88.0% 0.010 255);
+  --color-rule-2:      oklch(60.0% 0.016 255);
+  --color-muted:       oklch(46.0% 0.014 255);
+  --color-ink-2:       oklch(32.0% 0.016 255);
+  --color-ink:         oklch(21.0% 0.016 255);
+  --color-accent:      oklch(43.7% 0.140 255);
+  --color-accent-deep: oklch(36.0% 0.120 255);
+  --color-accent-ink:  oklch(98.5% 0.004 255);
+  --color-accent-soft: oklch(93.5% 0.030 255);
+  --color-focus:       oklch(52.0% 0.170 255);
+  --color-mark:        oklch(91.0% 0.110 95);
+  --color-error:       oklch(50.0% 0.190 27);
+  --color-error-soft:  oklch(95.5% 0.025 27);
+
+  /* Tipografía */
+  --font-ui:      "Mulish Variable", "Mulish", ui-sans-serif, sans-serif;
+  --font-reading: "Source Serif 4 Variable", "Source Serif 4", ui-serif, Georgia, serif;
+  --text-xs:   0.8rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-md:   1.25rem;
+  --text-lg:   1.5625rem;
+  --text-xl:   clamp(1.75rem, 2.2vw + 1rem, 2.4414rem);
+
+  /* Espacio (4 pt) */
+  --space-2xs: 0.25rem;
+  --space-xs:  0.5rem;
+  --space-sm:  0.75rem;
+  --space-md:  1rem;
+  --space-lg:  1.5rem;
+  --space-xl:  2.5rem;
+  --space-2xl: 4rem;
+
+  --radius:    6px;
+  --control-h: 2.75rem;
+  --measure:   68ch;
+
+  /* Movimiento */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+
+  /* Bootstrap: sus variables apuntan a estos tokens */
+  --bs-body-font-family: var(--font-ui);
+  --bs-body-font-size: var(--text-base);
+  --bs-body-color: var(--color-ink);
+  --bs-body-bg: var(--color-paper);
+  --bs-secondary-color: var(--color-muted);
+  --bs-border-color: var(--color-rule);
+  --bs-border-radius: var(--radius);
+  --bs-link-color: var(--color-accent);
+  --bs-link-hover-color: var(--color-accent-deep);
+  --bs-link-color-rgb: 5, 80, 156;
+  --bs-link-hover-color-rgb: 0, 59, 122;   /* = --color-accent-deep */
+  --bs-primary: var(--color-accent);
+  --bs-primary-rgb: 5, 80, 156;
+  --bs-focus-ring-color: var(--color-focus);
+}
